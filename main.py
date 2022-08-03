@@ -1,7 +1,9 @@
-from fordev.generators import people, cnh
-from fordev.generators import company, renavam
+from empresa import retornaEmpresa 
+from pessoa import retornaPessoa
 
-pessoa = people(uf_code='PR', age=50)
-empresa = renavam()
+pessoa = retornaPessoa('masculino')
+print(pessoa)
+print()
+empresa = retornaEmpresa()
 print(empresa)
 
